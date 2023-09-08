@@ -6,15 +6,18 @@
         <%- include('partials/header') %>
             <main>
                 <h2>Login Form</h2>
+                <!-- method attribute to be used -->
                 <form action='/login'>
-                    <div class='form-sec'>
+                    <!-- for class name and id, try to use BEM convention -->
+                    <!-- may not need div tag here try to come up without div tag -->
+
+                        <!-- when you use id, to be more specific and make sure id unique -->
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class='form-sec'>
+
                         <label for="password">Password:</label>
                         <input type="password" id="password" name="password" required>
-                    </div>
+
                     <button type="submit">Login</button>
                 </form>
             </main>
